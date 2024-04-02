@@ -17,7 +17,6 @@ const TeeVideo = () => {
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-            <HarleyButton text=" Next!!" onClick={nextPage} />
         </div>
     )
 }

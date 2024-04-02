@@ -1,20 +1,21 @@
 import React from "react";
 
 
-const HarleyButton = ({ text, onClick, harleyImage }) => {
+const HarleyButton = ({ text, onClick, harleyImage, padding, fontSize }) => {
     const buttonStyle = {
         backgroundImage: `url(${harleyImage})`,
-        backgroundSize: 'cover', // Adjust as needed
+        backgroundSize: 'contain', // Adjust as needed
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundColor: 'transparent',
         border: 'none',
-        padding: '10px 20px',
+        padding: padding || '20px 40px',
         cursor: 'pointer',
-        color: 'white',
+        color: 'blue',
         fontWeight: 'bold',
         display: 'block',
         margin: '20px auto',
+        fontSize: fontSize || '1.2rem'
     }
 
     return (
