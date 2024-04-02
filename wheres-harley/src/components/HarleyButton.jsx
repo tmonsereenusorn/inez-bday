@@ -1,9 +1,9 @@
 import React from "react";
-import backgroundImg from "../assets/harley_button.png";
 
-const HarleyButton = ({ text, onClick }) => {
+
+const HarleyButton = ({ text, onClick, harleyImage }) => {
     const buttonStyle = {
-        backgroundImage: `url(${backgroundImg})`,
+        backgroundImage: `url(${harleyImage})`,
         backgroundSize: 'cover', // Adjust as needed
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
