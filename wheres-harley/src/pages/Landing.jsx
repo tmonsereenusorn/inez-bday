@@ -28,8 +28,12 @@ const Landing = () => {
         gap: '10px',           // Adjust gap as needed
     };
 
-    const startGame = () => {
+    const onClickTee = () => {
         navigate('/tee-photo'); // Navigate to the next page
+    };
+
+    const onClickValPK = () => {
+        navigate('/val-pk-photo'); // Navigate to the next page
     };
 
     return (
@@ -37,8 +41,8 @@ const Landing = () => {
             <h1 style={{ fontSize: '48px' }}>🎉🎉🎉 HAPPY BIRTHDAYYYYYYYY 🎉🎉🎉</h1>
             <p style={{ fontSize: '24px', paddingTop: '0px' }}>Find and click on a wild Harley in each photo to uncover secret messages 🫵😯</p>
             <div style={buttonContainerStyle}>
-                <HarleyButton text="TEE" onClick={startGame} harleyImage={harley1} />
-                <HarleyButton text="VAL + PK" onClick={startGame} harleyImage={harley2} />
+                <HarleyButton text="TEE" onClick={onClickTee} harleyImage={harley1} color={'blue'} />
+                <HarleyButton text="VAL + PK" onClick={onClickValPK} harleyImage={harley2} color={'blue'} />
             </div>
             
         </div>

@@ -1,13 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import video from "../assets/tee_video.mp4";
+import harley1 from "../assets/harley_button.png";
 import HarleyButton from "../components/HarleyButton";
 
 const TeeVideo = () => {
     const navigate = useNavigate();
 
-    const nextPage = () => {
-        navigate('/next-page')
+    const onClickBack = () => {
+        navigate('/')
     }
 
     return (
@@ -17,6 +18,7 @@ const TeeVideo = () => {
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
+            <HarleyButton text="Back" onClick={onClickBack} harleyImage={harley1} />
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const HarleyButton = ({ text, onClick, harleyImage, padding, fontSize }) => {
+const HarleyButton = ({ text, onClick, harleyImage, padding, fontSize, color }) => {
     const buttonStyle = {
         backgroundImage: `url(${harleyImage})`,
         backgroundSize: 'contain', // Adjust as needed
@@ -11,7 +11,7 @@ const HarleyButton = ({ text, onClick, harleyImage, padding, fontSize }) => {
         border: 'none',
         padding: padding || '20px 40px',
         cursor: 'pointer',
-        color: 'blue',
+        color: color || 'white',
         fontWeight: 'bold',
         display: 'block',
         margin: '20px auto',
