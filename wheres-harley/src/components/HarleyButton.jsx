@@ -19,9 +19,12 @@ const HarleyButton = ({ text, onClick, harleyImage, padding, fontSize, color }) 
     }
 
     return (
-        <button style={buttonStyle} onClick={onClick}>
-            {text}
-        </button>
+        <div>
+            <button style={buttonStyle} onClick={onClick}>
+                {text}
+            </button>
+        </div>
+        
     )
 }
 

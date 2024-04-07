@@ -13,7 +13,7 @@ const TeeVideo = () => {
 
     return (
         <div style={{ textAlign: 'center' }}>
-            <h1>Secret Message #1</h1>
+            <h1>Tee's Secret Message</h1>
             <video controls width="250">
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.

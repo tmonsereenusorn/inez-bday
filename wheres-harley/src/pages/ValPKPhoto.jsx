@@ -1,41 +1,56 @@
 import React from "react";
 import photo from "../assets/val_pk_photo.png";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-
+import { useNavigate } from "react-router-dom";
 
 const ValPKPhoto = () => {
     const navigate = useNavigate();
 
+    // Simplified container style to handle both text positioning and image centering
+    const containerStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'flex-start', // Adjusts the spacing between items
+        height: '100vh',
+        textAlign: 'center',
+        paddingBottom: '50px'
+    };
+
+    // Apply necessary styles directly to the image container and clickable area
+    const imageContainerStyle = {
+        position: 'relative',
+        width: '100%',
+        maxWidth: '500px',
+        margin: '0 auto', // Centers the container
+        marginBottom: '20px'
+    };
+
     const harleySpotStyle = {
         position: 'absolute',
-        left: '54.6%', // X coordinate in percentage
-        top: '82.7%', // Y coordinate in percentage where the dog's reflection is
-        width: '1.3%', // Width in percentage of the clickable area
-        height: '3%', // Height in percentage of the clickable area
-        backgroundColor: 'transparent', // Red color to highlight the area; set to 'transparent' to hide
+        left: '66%',
+        top: '82%',
+        width: '3.9%',
+        height: '3.5%',
+        backgroundColor: 'transparent', // For visibility, could be set to rgba(255,0,0,0.5)
     };
 
     const imageStyle = {
-        display: 'block', // Use block to apply auto margins
-        maxWidth: '100%', // Max width is 100% of the containing block
-        maxHeight: '80vh', // Max height is 80% of the viewport height
-        margin: '0 auto', // Auto margins to center it horizontally
-        position: 'relative', // Position relative for top 50% to work
-        top: '50%', // Push the top edge down to 50% of the parent
-        transform: 'translateY(-50%)', // Pull back up by 50% of its own height
+        display: 'block',
+        width: '100%',
+        height: 'auto', // Ensures the image maintains its aspect ratio
     };
 
-    const handleClick = () => {
-        navigate('/val-pk-video');
-    }
+    const handleClick = () => navigate('/val-pk-video');
 
     return (
-        <div style={{textAlign: 'center', height: '100vh'}}>
-            <h1 style={{ marginBottom: '0em' }}>Where's Harley?</h1>
-            <img style={imageStyle} src={photo} alt="Find harley"/>
-            <div style={harleySpotStyle} onClick={handleClick}/>
+        <div style={containerStyle}>
+            <h1>Where's Harley?</h1>
+            <div style={imageContainerStyle}>
+                <img style={imageStyle} src={photo} alt="Find Harley" />
+                <div style={harleySpotStyle} onClick={handleClick}/>
+            </div>
         </div>
     );
-}
+};
 
 export default ValPKPhoto;
