@@ -6,6 +6,7 @@ import harley2 from "../assets/harley_button_2.png";
 import harley3 from "../assets/harley_button_3.png";
 import harley4 from "../assets/harley_button_4.png";
 import harley5 from "../assets/harley_button_5.png";
+import harley6 from "../assets/harley_button_6.png";
 import PersonalHarleyButton from "../components/PersonalHarleyButton";
 
 const Landing = () => {
@@ -17,7 +18,7 @@ const Landing = () => {
         backgroundPosition: 'center', // Center the background image
         height: '100vh', // Full height of the viewport
         color: 'white', // Assuming white text color for better readability
-        paddingTop: '50px', // Adjust this value to move your content down
+        paddingTop: '10px', // Adjust this value to move your content down
         textAlign: 'center',
     };
 
@@ -51,6 +52,10 @@ const Landing = () => {
         navigate('/mae-photo'); // Navigate to the next page
     };
 
+    const onClickAlina = () => {
+        navigate('/alina-photo'); // Navigate to the next page
+    };
+
     return (
         <div style={landingStyle}>
             <h1 style={{ fontSize: '48px' }}>🎉🎉🎉 HAPPY BIRTHDAYYYYYYYY 🎉🎉🎉</h1>
@@ -60,9 +65,11 @@ const Landing = () => {
                 <PersonalHarleyButton text="VAL + PK" onClick={onClickValPK} harleyImage={harley2} color={'blue'} />
                 <PersonalHarleyButton text="ASHLEY" onClick={onClickAshley} harleyImage={harley3} color={'blue'} />
                 <PersonalHarleyButton text="LILY" onClick={onClickLily} harleyImage={harley4} color={'blue'} />
-                <PersonalHarleyButton text="MAE" onClick={onClickMae} harleyImage={harley5} color={'blue'} />
             </div>
-            
+            <div style={buttonContainerStyle}>
+                <PersonalHarleyButton text="MAE" onClick={onClickMae} harleyImage={harley5} color={'blue'} />
+                <PersonalHarleyButton text="ALINA" onClick={onClickAlina} harleyImage={harley6} color={'blue'} />
+            </div>
         </div>
     );
 }

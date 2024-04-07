@@ -24,8 +24,8 @@ const PersonalHarleyButton = ({ text, onClick, harleyImage, padding }) => {
         backgroundSize: 'contain', // Ensures the image fits within the dimensions
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        width: '200px', // Fixed width
-        height: '100px', // Fixed height
+        width: '140px', // Fixed width
+        height: '70px', // Fixed height
         paddingBottom: '100%', // Use padding-bottom to control the aspect ratio of the image
         backgroundColor: 'transparent',
         maxWidth: '100%',

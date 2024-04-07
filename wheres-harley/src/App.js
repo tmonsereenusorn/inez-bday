@@ -13,6 +13,8 @@ import LilyPhoto from "./pages/LilyPhoto";
 import LilyVideo from "./pages/LilyVideo";
 import MaePhoto from "./pages/MaePhoto";
 import MaeVideo from "./pages/MaeVideo";
+import AlinaPhoto from "./pages/AlinaPhoto";
+import AlinaVideo from "./pages/AlinaVideo";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path="/lily-video" element={<LilyVideo />} />
         <Route path="/mae-photo" element={<MaePhoto />} />
         <Route path="/mae-video" element={<MaeVideo />} />
+        <Route path="/alina-photo" element={<AlinaPhoto />} />
+        <Route path="/alina-video" element={<AlinaVideo />} />
       </Routes>
     </BrowserRouter>
   );
