@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useEffect} from "react";
 import backgroundImg from "../assets/wheres_harley_landing_page.png";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import harley1 from "../assets/harley_button.png";
@@ -12,6 +12,11 @@ import harley8 from "../assets/harley_button_8.png";
 import PersonalHarleyButton from "../components/PersonalHarleyButton";
 
 const Landing = () => {
+    useEffect(() => {
+        document.title = 'Inez\'s Birthday';
+      }, []);
+
+    
     const navigate = useNavigate(); // Hook for navigation
 
     const landingStyle = {
