@@ -15,6 +15,8 @@ import MaePhoto from "./pages/MaePhoto";
 import MaeVideo from "./pages/MaeVideo";
 import AlinaPhoto from "./pages/AlinaPhoto";
 import AlinaVideo from "./pages/AlinaVideo";
+import ClaudScottPhoto from "./pages/ClaudScottPhoto";
+import ClaudScottVideo from "./pages/ClaudScottVideo";
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
         <Route path="/mae-video" element={<MaeVideo />} />
         <Route path="/alina-photo" element={<AlinaPhoto />} />
         <Route path="/alina-video" element={<AlinaVideo />} />
+        <Route path="/claud-scott-photo" element={<ClaudScottPhoto />} />
+        <Route path="/claud-scott-video" element={<ClaudScottVideo />} />
       </Routes>
     </BrowserRouter>
   );

@@ -7,6 +7,7 @@ import harley3 from "../assets/harley_button_3.png";
 import harley4 from "../assets/harley_button_4.png";
 import harley5 from "../assets/harley_button_5.png";
 import harley6 from "../assets/harley_button_6.png";
+import harley7 from "../assets/harley_button_7.png";
 import PersonalHarleyButton from "../components/PersonalHarleyButton";
 
 const Landing = () => {
@@ -56,19 +57,24 @@ const Landing = () => {
         navigate('/alina-photo'); // Navigate to the next page
     };
 
+    const onClickClaudScott = () => {
+        navigate('/claud-scott-photo'); // Navigate to the next page
+    };
+
     return (
         <div style={landingStyle}>
             <h1 style={{ fontSize: '48px' }}>🎉🎉🎉 HAPPY BIRTHDAYYYYYYYY 🎉🎉🎉</h1>
             <p style={{ fontSize: '24px', paddingTop: '0px' }}>Find and click on a wild Harley in each photo to uncover secret messages 🫵😯</p>
             <div style={buttonContainerStyle}>
                 <PersonalHarleyButton text="TEE" onClick={onClickTee} harleyImage={harley1} color={'blue'} />
-                <PersonalHarleyButton text="VAL + PK" onClick={onClickValPK} harleyImage={harley2} color={'blue'} />
+                <PersonalHarleyButton text="VAL" onClick={onClickValPK} harleyImage={harley2} color={'blue'} />
                 <PersonalHarleyButton text="ASHLEY" onClick={onClickAshley} harleyImage={harley3} color={'blue'} />
                 <PersonalHarleyButton text="LILY" onClick={onClickLily} harleyImage={harley4} color={'blue'} />
             </div>
             <div style={buttonContainerStyle}>
                 <PersonalHarleyButton text="MAE" onClick={onClickMae} harleyImage={harley5} color={'blue'} />
                 <PersonalHarleyButton text="ALINA" onClick={onClickAlina} harleyImage={harley6} color={'blue'} />
+                <PersonalHarleyButton text="CLOD" onClick={onClickClaudScott} harleyImage={harley7} color={'blue'} />
             </div>
         </div>
     );
