@@ -11,10 +11,16 @@ const ClaudScottVideo = () => {
         navigate('/')
     }
 
+    const videoStyle = {
+        transform: "rotate(90deg)", // Rotate the video 90 degrees
+        transformOrigin: 'center', // Ensure the video rotates around its center
+    };
+
+
     return (
         <div style={{ textAlign: 'center' }}>
-            <h1>Lily's Secret Message</h1>
-            <video controls width="400">
+            <h1>Claud and Scott's Secret Message</h1>
+            <video controls width="400" style={videoStyle}>
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>

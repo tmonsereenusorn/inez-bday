@@ -20,18 +20,18 @@ const ClaudScottPhoto = () => {
     const imageContainerStyle = {
         position: 'relative',
         width: '100%',
-        maxWidth: '800px',
+        maxWidth: '450px',
         margin: '0 auto', // Centers the container
         marginBottom: '20px'
     };
 
     const harleySpotStyle = {
         position: 'absolute',
-        left: '0%',
-        top: '92%',
+        left: '85%',
+        top: '7%',
         width: '12%',
-        height: '8%',
-        backgroundColor: 'rgba(255,0,0,0.5)', // For visibility, could be set to rgba(255,0,0,0.5)
+        height: '12%',
+        backgroundColor: 'transparent', // For visibility, could be set to rgba(255,0,0,0.5)
     };
 
     const imageStyle = {
