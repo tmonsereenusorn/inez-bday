@@ -17,6 +17,8 @@ import AlinaPhoto from "./pages/AlinaPhoto";
 import AlinaVideo from "./pages/AlinaVideo";
 import ClaudScottPhoto from "./pages/ClaudScottPhoto";
 import ClaudScottVideo from "./pages/ClaudScottVideo";
+import AleenaPhoto from "./pages/AleenaPhoto";
+import AleenaVideo from "./pages/AleenaVideo";
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
         <Route path="/alina-video" element={<AlinaVideo />} />
         <Route path="/claud-scott-photo" element={<ClaudScottPhoto />} />
         <Route path="/claud-scott-video" element={<ClaudScottVideo />} />
+        <Route path="/aleena-photo" element={<AleenaPhoto />} />
+        <Route path="/aleena-video" element={<AleenaVideo />} />
       </Routes>
     </BrowserRouter>
   );
